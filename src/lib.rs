@@ -1,4 +1,20 @@
 #![allow(rustdoc::invalid_html_tags)]
+//! # `async-std` has been discontinued; use `smol` instead
+//!
+//! We created `async-std` to demonstrate the value of making a library as close to
+//! `std` as possible, but async. We think that demonstration was successful, and
+//! we hope it will influence future design and development directions of async in
+//! `std`. However, in the meantime, the [`smol`](https://github.com/smol-rs/smol/)
+//! project came about and provided a great executor and libraries for asynchronous
+//! use in the Rust ecosystem. We think that resources would be better spent
+//! consolidating around `smol`, rather than continuing to provide occasional
+//! maintenance of `async-std`. As such, we recommend that all users of
+//! `async-std`, and all libraries built on `async-std`, switch to `smol` instead.
+//!
+//! In addition to the `smol` project as a direct replacement, you may find other
+//! parts of the futures ecosystem useful, including `futures-concurrency`,
+//! `async-io`, `futures-lite`, and `async-compat`.
+//!
 //! # Async version of the Rust standard library
 //!
 //! `async-std` is a foundation of portable Rust software, a set of minimal and battle-tested
